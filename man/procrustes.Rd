@@ -4,7 +4,7 @@
 \alias{procrustes}
 \title{procrustes}
 \usage{
-procrustes(z, w, ref = 1)
+procrustes(z, w, ref = 1, dilation = FALSE)
 }
 \arguments{
 \item{z}{A list of length \code{M}. \code{M} posterior samples of person latent positions \code{N} x \code{q}, where \code{N} is the number of respondents and \code{q} is the dimension of the interaction map.}
@@ -12,6 +12,9 @@ procrustes(z, w, ref = 1)
 \item{w}{A list of length \code{M}. \code{M} posterior samples of item latent positions  \code{I} x \code{q}, where \code{I} is the number of items  and \code{q} is the dimension of the interaction map.}
 
 \item{ref}{Reference configuration (i.e., iteration) index. Default is 1 (i.e., posterior samples at iteration 1) ).}
+
+\item{dilation}{Logical; allow *uniform scaling* during alignment
+(default \code{FALSE}). Set \code{TRUE} only for plotting/overlay use cases.}
 }
 \value{
 A list of \code{M} matched posterior samples of \code{z}  and a list of \code{M} matched posterior samples of \code{w}.
@@ -42,10 +45,10 @@ matched_data <- procrustes(z = z, w = w)
 
 }
 \references{
-Borg and Groenen. 1997 \emph{Modern Multidimensional Scaling}.
-New York: Springer. pp. 340--342.
+Borg and Groenen. 1997. \emph{Modern Multidimensional Scaling}.
+New York: Springer. pp. 340-342.
 
-Jeon, M., Jin, I. H., Schweinberger, M., & Baugh, S. 2021 Mapping Unobserved Item–Respondent Interactions: A Latent Space Item Response Model with Interaction Map. \emph{Psychometrika}, \bold{86(2)}, 378--403.
+Jeon, M., Jin, I. H., Schweinberger, M., & Baugh, S. 2021. \emph{Mapping Unobserved Item–Respondent Interactions: A Latent Space Item Response Model with Interaction Map}. Psychometrika, 86(2), 378–403.
 
-Andrew, D. M., Kevin M. Q., Jong Hee Park. 2011 MCMCpack: Markov Chain Monte Carlo in R. \emph{Journal of Statistical Software}. \bold{42(9)}: 1--21.
+Andrew D. Martin, Kevin M. Quinn, Jong Hee Park. 2011. MCMCpack: Markov Chain Monte Carlo in R. Journal of Statistical Software. 42(9): 1-21.
 }

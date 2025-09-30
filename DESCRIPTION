@@ -1,7 +1,7 @@
 Package: prolsirm
 Type: Package
 Title: Procrustes Matching for Latent Space Item Response Model
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c( person("Jinwen","Luo", role=c("aut","cre"), email =
         "jevanluo@ucla.edu", comment=c(ORCID="0000-0002-8511-7165")),
         person("Minjeong","Jeon", role="aut", email =
@@ -12,9 +12,9 @@ Imports: MCMCpack
 Encoding: UTF-8
 RoxygenNote: 7.2.3
 NeedsCompilation: no
-Packaged: 2023-09-19 15:52:45 UTC; jevan
-Author: Jinwen Luo [aut, cre] (<https://orcid.org/0000-0002-8511-7165>),
-  Minjeong Jeon [aut] (<https://orcid.org/0000-0002-5880-4146>)
+Packaged: 2025-09-26 21:14:59 UTC; jevan
+Author: Jinwen Luo [aut, cre] (ORCID: <https://orcid.org/0000-0002-8511-7165>),
+  Minjeong Jeon [aut] (ORCID: <https://orcid.org/0000-0002-5880-4146>)
 Maintainer: Jinwen Luo <jevanluo@ucla.edu>
 Repository: CRAN
-Date/Publication: 2023-09-20 13:10:02 UTC
+Date/Publication: 2025-09-30 04:10:02 UTC
